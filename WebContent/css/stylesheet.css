@@ -1,0 +1,458 @@
+/* global document styles */
+html {
+	background-color: #e6f5ff;
+}
+
+body {
+	margin: auto;
+}
+
+/* default element styles */
+h1 {
+	font: bold 20px Gill Sans MT;
+	color: #004d80;
+}
+
+label {
+	font: 14px Segoe UI;
+}
+
+input {
+	text-align: center;
+}
+
+p {
+	font: 14px Segoe UI;
+}
+
+span {
+	font: 12px Segoe UI;
+}
+
+.inline {
+	display: inline;
+}
+
+/* centerer div */
+#wrapper {
+	text-align: center;
+}
+
+/* navigation bar */
+.nav {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	background-color: #3b5998;
+	z-index: 2147483647;
+}
+
+.nav li {
+	float: left;
+	display: block;
+	padding: 2px 14px 10px 14px;
+}
+
+nav li a {
+	color: #e6f2ff;
+	text-align: center;
+	text-decoration: none;
+	font: bold 14px Helvetica;
+}
+
+#logo {
+	color: white;
+	text-align: center;
+	text-decoration: none;
+	font-size: 17px;
+	font: bold 20px Helvetica;
+}
+
+nav li input[type=text] {
+	color: gray;
+	font: 12px Consolas;
+	border: 1px solid #c8d3ea;
+	width: 150px;
+}
+
+nav li input#search {
+	background: url("../img/assets/search.png");
+	border: none;
+	display: inline-block;
+	position: relative;
+	height: 20px;
+	width: 20px;
+	cursor: pointer;
+	padding: 0px;
+	margin: auto;
+}
+
+nav li a#login {
+	padding-left: 100px;
+}
+
+/* navigation bar animations */
+
+/* login.html */
+.login {
+	margin: 70px 10px 10px 10px;
+	width: 30%;
+	background: #dfe3ee;
+	padding: 10px;
+	display: inline-block;
+}
+
+.login input[type=text] {
+	color: gray;
+	font: 12px Consolas;
+	border: 1px solid #c8d3ea;
+	width: 150px;
+}
+
+.login input[type=text]:focus {
+	color: gray;
+	font: 12px Consolas;
+	border: 1px solid #c8d3ea;
+	width: 200px;
+	transition: width 0.2s ease-in-out;
+}
+
+.login input[type=password] {
+	color: #8b9dc3;
+	font: 12px Consolas;
+	border: 1px solid #c8d3ea;
+	width: 150px;
+}
+
+.login input[type=password]:focus {
+	color: #8b9dc3;
+	font: 12px Consolas;
+	border: 1px solid #c8d3ea;
+	width: 200px;
+	transition: width 0.2s ease-in-out;
+}
+
+.login input[type="submit"] {
+	background-color: #3b5998;
+	border: none;
+	color: white;
+	padding: 5px 5px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font: 14px Segoe UI;
+	transition: background 0.25s linear;
+	margin: 10px 10px 10px 10px;
+}
+
+.login input[type="submit"]:hover {
+	background-color: #1ab6ff;
+	border: none;
+	color: white;
+	padding: 5px 5px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font: 14px Segoe UI;
+}
+
+.login input[type="submit"]:active {
+	background-color: #006999;
+	border: none;
+	color: white;
+	padding: 5px 5px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font: 14px Segoe UI;
+}
+
+/* register.html */
+.register {
+	margin: 70px 10px 10px 10px;
+	width: 30%;
+	background: #dfe3ee;
+	padding: 10px;
+	display: inline-block;
+}
+
+.register input[type=text] {
+	color: gray;
+	font: 12px Consolas;
+	border: 1px solid #c8d3ea;
+	width: 150px;
+}
+
+.register input[type=text]:focus {
+	color: gray;
+	font: 12px Consolas;
+	border: 1px solid #c8d3ea;
+	width: 200px;
+	transition: width 0.2s ease-in-out;
+}
+
+.register input[type=password] {
+	color: #8b9dc3;
+	font: 12px Consolas;
+	border: 1px solid #c8d3ea;
+	width: 150px;
+}
+
+.register input[type=password]:focus {
+	color: #8b9dc3;
+	font: 12px Consolas;
+	border: 1px solid #c8d3ea;
+	width: 200px;
+	transition: width 0.2s ease-in-out;
+}
+
+.register input[type="submit"] {
+	background-color: #3b5998;
+	border: none;
+	color: white;
+	padding: 5px 5px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font: 14px Segoe UI;
+	transition: background 0.25s linear;
+	margin: 10px 10px 10px 10px;
+}
+
+.register input[type="submit"]:hover {
+	background-color: #1ab6ff;
+	border: none;
+	color: white;
+	padding: 5px 5px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font: 14px Segoe UI;
+}
+
+.register input[type="submit"]:active {
+	background-color: #006999;
+	border: none;
+	color: white;
+	padding: 5px 5px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font: 14px Segoe UI;
+}
+
+/* index.jsp */
+.welcome-banner {
+	margin: 70px 10px 10px 10px;
+	width: 80%;
+	background: #dfe3ee;
+	padding: 10px;
+	display: inline-block;
+	background: #dfe3ee;
+}
+
+.public-photos {
+	margin: 70px 10px 10px 10px;
+	width: 80%;
+	background: #dfe3ee;
+	padding: 10px;
+	display: inline-block;
+	background: #dfe3ee;
+}
+
+.shared-photos {
+	margin: 70px 10px 10px 10px;
+	width: 80%;
+	background: #dfe3ee;
+	padding: 10px;
+	display: inline-block;
+	background: #dfe3ee;
+}
+
+/* view.jsp */
+.photo {
+	margin: 70px 10px 10px 10px;
+	width: 80%;
+	padding: 10px;
+	display: inline-block;
+	background: #dfe3ee;
+}
+
+.img {
+	display: inline;
+	margin: 2px;
+	transition: width 0.25s linear;
+}
+
+.tag {
+	display: inline-block;
+	margin: 5px;
+}
+
+.share {
+	display: inline-block;
+	margin: 5px;
+}
+
+/* profile.jsp */
+.description {
+	margin: 70px 10px 10px 10px;
+	width: 80%;
+	padding: 10px;
+	display: inline-block;
+	background: #dfe3ee;
+}
+
+.public-photos {
+	margin: 70px 10px 10px 10px;
+	width: 80%;
+	padding: 10px;
+	display: inline-block;
+	background: #dfe3ee;
+}
+
+/* upload.jsp */
+.upload {
+	margin: 70px 10px 10px 10px;
+	width: 80%;
+	padding: 10px;
+	display: inline-block;
+	background: #dfe3ee;
+}
+
+/* search.jsp */
+.search-banner {
+	margin: 70px 10px 10px 10px;
+	width: 80%;
+	padding: 10px;
+	display: inline-block;
+	background: #dfe3ee;
+}
+
+.users {
+	margin: 70px 10px 10px 10px;
+	width: 80%;
+	padding: 10px;
+	display: inline-block;
+	background: #dfe3ee;
+}
+
+.public-photos {
+	margin: 70px 10px 10px 10px;
+	width: 80%;
+	padding: 10px;
+	display: inline-block;
+	background: #dfe3ee;
+}
+
+.shared-photos {
+	margin: 70px 10px 10px 10px;
+	width: 80%;
+	padding: 10px;
+	display: inline-block;
+	background: #dfe3ee;
+}
+
+/* denied banner */
+#denied {
+	margin: 70px 10px 10px 10px;
+	width: 80%;
+	padding: 10px;
+	display: inline-block;
+	background: #dfe3ee;
+}
+
+/* global styles with animations */
+a {
+	font: 12px Segoe UI;
+	transition: 0.25s linear;
+}
+
+a:hover {
+	text-shadow: 0 0 20px #b1dae7;
+}
+
+button {
+	background-color: #3b5998;
+	border: none;
+	color: white;
+	padding: 5px 5px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font: 14px Segoe UI;
+	transition: background 0.25s linear;
+	margin: 10px 10px 10px 10px;
+}
+
+button:hover {
+	background-color: #1ab6ff;
+	border: none;
+	color: white;
+	padding: 5px 5px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font: 14px Segoe UI;
+}
+
+button:active {
+	background-color: #006999;
+	border: none;
+	color: white;
+	padding: 5px 5px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font: 14px Segoe UI;
+}
+
+input[type="submit"] {
+	background-color: #3b5998;
+	border: none;
+	color: white;
+	padding: 5px 5px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font: 14px Segoe UI;
+	transition: background 0.25s linear;
+	margin: 10px 10px 10px 10px;
+}
+
+input[type="submit"]:hover {
+	background-color: #1ab6ff;
+	border: none;
+	color: white;
+	padding: 5px 5px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font: 14px Segoe UI;
+}
+
+input[type="submit"]:active {
+	background-color: #006999;
+	border: none;
+	color: white;
+	padding: 5px 5px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font: 14px Segoe UI;
+}
+
+input[type=text] {
+	color: gray;
+	font: 12px Consolas;
+	border: 1px solid #c8d3ea;
+	width: 150px;
+}
+
+input[type=text]:focus {
+	color: gray;
+	font: 12px Consolas;
+	border: 1px solid #c8d3ea;
+	width: 200px;
+	transition: width 0.2s ease-in-out;
+}

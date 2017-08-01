@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="../css/stylesheet.css" />
+<meta charset="ISO-8859-1">
+<title>Login to Fakebook</title>
+</head>
+<body>
+	<div class="nav">
+		<nav>
+			<ul>
+				<li><a href="/Fakebook/jsp/index.jsp" id="logo">fakebook</a></li>
+				<li><form action="" method="GET">
+						<input type="text" placeholder="Search" /> <input type="submit"
+							value=" " id="search" />
+					</form></li>
+				<li><a href="/Fakebook/html/login.html" id="login">login</a></li>
+				<li><a href="/Fakebook/html/register.html" id="register">register</a></li>
+			</ul>
+		</nav>
+	</div>
+
+	<div id="wrapper">
+		<div class="login">
+			<h1>Login to Fakebook!</h1>
+			<form action="../in" method="POST">
+				<label for="uname">Username: </label><input type="text" name="uname"
+					placeholder="Username" id="uname" /> <br /> <label>Password:
+				</label><input type="password" name="pword" placeholder="Password"
+					id="pword" /> <br /> <br /> <label for="remember">Remember
+					me!</label> <input type="checkbox" name="remember" value="remember"
+					id="remember" /> <br /> <br /> <input type="submit"
+					value="Submit">
+			</form>
+		</div>
+	</div>
+</body>
+</html>
